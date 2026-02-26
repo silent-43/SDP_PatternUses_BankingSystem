@@ -27,4 +27,10 @@ public class SavingsAccount extends BankAccount {
       // strategy will validate; delegate to super which applies strategy and balance checks
       super.withdraw(amount);
    }
+
+   @Override
+   public String toString() {
+      return "[SAVINGS] Name: " + this.name + ", Id: " + this.acc_num + ", Balance: " + this.getbalance() + 
+             ", Max Withdrawal: " + this.maxWithLimit + ", Net Balance (with 5% interest): " + String.format("%.2f", this.getNetBalance());
+   }
 }

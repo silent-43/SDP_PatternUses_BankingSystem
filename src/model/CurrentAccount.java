@@ -11,4 +11,10 @@ public class CurrentAccount extends BankAccount {
       this.tradeLicenseNumber = tradeLicenseNumber;
       this.setWithdrawalStrategy(new CurrentWithdrawStrategy());
    }
+
+   @Override
+   public String toString() {
+      return "[CURRENT] Name: " + this.name + ", Id: " + this.acc_num + ", Balance: " + this.getbalance() + 
+             ", Trade License: " + this.tradeLicenseNumber;
+   }
 }
