@@ -45,6 +45,34 @@ The Banking System is a Java Swing application that simulates basic banking oper
 - Real-time account information display
 - Input validation and error handling
 
+### Account Display & Creation Process
+
+#### After Login - Account Creation Options
+Users can create three different account types from the main dashboard:
+
+1. **Add Savings Account**
+   - Requires: Account holder name, Initial balance, Maximum withdrawal limit
+   - Displays: Account number, Name, Balance (with 5% interest calculated)
+
+2. **Add Current Account**
+   - Requires: Business account name, Initial balance, Trade license number
+   - Displays: Account number, Name, Balance, Trade License
+
+3. **Add Student Account**
+   - Requires: Student name, Institution name, Initial balance
+   - Displays: Account number, Name, Institution, Balance, Net Balance (with interest)
+
+#### Display All Accounts List
+The "Display All Accounts" feature shows all created accounts with their specific information:
+- **Each account entry displays**:
+  - `Account ID` (Auto-generated unique number)
+  - `Account Holder Name`
+  - `Current Balance`
+  - Account-specific fields:
+    - **Savings Account**: Shows maximum withdrawal limit
+    - **Current Account**: Shows trade license number
+    - **Student Account**: Shows institution name and net balance with interest
+
 ## Design Patterns Used
 
 ### 1. **Factory Pattern**
