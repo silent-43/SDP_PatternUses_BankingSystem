@@ -16,21 +16,21 @@ The Banking System is a Java Swing application that simulates basic banking oper
 
 #### 1. **Savings Account**
 - 5% interest rate on balance
-- Minimum balance requirement: Rs. 2000
+- Minimum balance requirement: BDT 2000
 - Maximum withdrawal limit per transaction
 - Suitable for personal savings
 
 #### 2. **Current Account**
 - For business entities with trade license number
-- Minimum balance requirement: Rs. 5000
+- Minimum balance requirement: BDT 5000
 - No withdrawal limits
 - Higher security for business transactions
 
 #### 3. **Student Account**
 - Special account for students
 - Inherits interest benefits from Savings Account (5% rate)
-- Very low minimum balance: Rs. 100
-- Maximum withdrawal limit of Rs. 20000
+- Very low minimum balance: BDT 100
+- Maximum withdrawal limit of BDT 20000
 - Requires institution name
 
 ### Security & Validation
