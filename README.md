@@ -48,29 +48,20 @@ The Banking System is a Java Swing application that simulates basic banking oper
 ## Design Patterns Used
 
 ### 1. **Factory Pattern**
-- **Location**: actory/AccountFactory.java
+
 - **Purpose**: Creates different types of bank accounts (SavingsAccount, CurrentAccount, StudentAccount) without specifying their concrete classes
 - **Benefits**: Encapsulates object creation logic and allows easy addition of new account types
 
 ### 2. **Strategy Pattern**
-- **Location**: strategy/ folder
-  - WithdrawStrategy.java (Interface)
-  - CurrentWithdrawStrategy.java
-  - SavingsWithdrawStrategy.java
 - **Purpose**: Defines different withdrawal strategies for different account types
 - **Benefits**: Allows runtime selection of withdrawal behavior based on account type
 
 ### 3. **Data Access Object (DAO) Pattern**
-- **Location**: dao/ folder
-  - AccountDAO.java (Interface)
-  - FileAccountDAO.java (Implementation)
 - **Purpose**: Abstracts database/file operations from business logic
 - **Benefits**: Centralizes data access logic and makes it easy to switch storage implementations
 
 ### 4. **Model-View-Controller (MVC) Pattern**
-- **Model**: model/ folder (Bank, BankAccount, Account types)
-- **View**: iew/GUI.java (User interface)
-- **Controller**: controller/BankController.java (Business logic)
+
 - **Purpose**: Separates concerns into data, presentation, and business logic
 - **Benefits**: Improves code maintainability and testability
 
