@@ -28,7 +28,7 @@ public class BankController {
 
     public static void handleLogin(String user, String pass, JFrame loginFrame) {
         // simple auth; can be replaced with proper User/Session later
-        if ("admin".equals(user) && ("password".equals(pass) || "admin".equals(pass))) {
+        if ("Sohag".equals(user) && "33390Sohag".equals(pass)) {
             JOptionPane.showMessageDialog(loginFrame, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
             loginFrame.dispose();
             GUI.login.showMainFrame();

@@ -75,20 +75,28 @@ The "Display All Accounts" feature shows all created accounts with their specifi
 
 ## Design Patterns Used
 
-### 1. **Factory Pattern**
+### 1. **Singleton Pattern**
+
+- **Purpose**: Guarantees only one instance of the Bank class exists throughout the application, ensuring all users access the same bank database.
+- **Benefits**: 
+  - Centralized database management
+  - Prevents data inconsistency between multiple bank instances
+  - Consistent account information for all users
+
+### 2. **Factory Pattern**
 
 - **Purpose**: Creates different types of bank accounts (SavingsAccount, CurrentAccount, StudentAccount) without specifying their concrete classes
 - **Benefits**: Encapsulates object creation logic and allows easy addition of new account types
 
-### 2. **Strategy Pattern**
+### 3. **Strategy Pattern**
 - **Purpose**: Defines different withdrawal strategies for different account types
 - **Benefits**: Allows runtime selection of withdrawal behavior based on account type
 
-### 3. **Data Access Object (DAO) Pattern**
+### 4. **Data Access Object (DAO) Pattern**
 - **Purpose**: Abstracts database/file operations from business logic
 - **Benefits**: Centralizes data access logic and makes it easy to switch storage implementations
 
-### 4. **Model-View-Controller (MVC) Pattern**
+### 5. **Model-View-Controller (MVC) Pattern**
 
 - **Purpose**: Separates concerns into data, presentation, and business logic
 - **Benefits**: Improves code maintainability and testability
