@@ -6,7 +6,12 @@ import model.Bank;
 public class FileAccountDAO implements AccountDAO {
     @Override
     public void save(Bank bank) throws IOException {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(bank.getFilepath()))) {
+        File file = new File(bank.getFilepath());
+        File parent = file.getParentFile();
+        if (parent != null && !parent.exists()) {
+            parent.mkdirs();
+        }
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
             oos.writeObject(bank);
         }
     }

@@ -14,7 +14,7 @@ public class Bank implements Serializable {
    private static final long serialVersionUID = 1L;
    private static Bank instance;
    private BankAccount[] accounts = new BankAccount[100];
-   private String filepath = "C:\\Temp\\Bank.txt";
+   private String filepath = "Bank.txt";
 
    private Bank() {
    }
